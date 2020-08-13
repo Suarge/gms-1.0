@@ -1,9 +1,9 @@
- Stadium-management-system
+## Stadium-management-system
 
+### 项目说明
 
-School Engineering Practice Project-----foreground-background Front:html+css+js+jquery+bootstrap  Rear: servlet+mysql  Interaction：jsp+ajax
+该项目为体育馆场地管理系统1.0版本，使用原生Javaee+Jsp+Mysql，数据库连接工具c3p0，数据库操作工具Commons，用监听器完成定时任务，过滤器实现安全跳转。 
 
-该项目为体育馆场地管理系统1.0版本，使用原生Javaee+Jsp+Mysql，数据库连接工具Commons，用监听器完成定时任务，过滤器实现安全跳转。 
 ### 项目介绍
 https://blog.csdn.net/weixin_43786818/article/details/107980802
 ### 项目演示地址：
