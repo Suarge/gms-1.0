@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>GMS</display-name>
+  
+ <!-- 页面编码过滤器 --> 
+  <filter>
+  	<filter-name>CharacterEncodingFilter</filter-name>
+  	<filter-class>gms.cuit.web.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CharacterEncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- 自动登录过滤器 -->
+  <filter>
+	<filter-name>AutoLoginFilter</filter-name>
+	<filter-class>gms.cuit.web.filter.user.AutoLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+	<filter-name>AutoLoginFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- 配置用户权限登录 -->
+  <filter>
+	<filter-name>UserLogin</filter-name>
+	<filter-class>gms.cuit.web.filter.user.UserLoginPrivilegeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+	<filter-name>UserLogin</filter-name>
+	<url-pattern>/privilege/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- 管理员权限登录 -->
+  <filter>
+  	<filter-name>AdminLoginFilter</filter-name>
+  	<filter-class>gms.cuit.web.filter.admin.AdminLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>AdminLoginFilter</filter-name>
+  	<url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>/user/GMS_index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
