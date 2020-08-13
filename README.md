@@ -13,6 +13,12 @@ http://121.36.38.15:8080/GMS/admin
 admin
 123456
 
+### 项目详细说明介绍
+https://blog.csdn.net/weixin_43786818/article/details/107980802
+
+### 2.0版本地址
+https://github.com/Suarge/gms-2.0
+
 ---
 
 ### 项目截图
@@ -34,6 +40,7 @@ admin
 * 首页各种加载、场馆类型展示、通知信息展示、场馆详情展示
 * 模糊查询订单
 * 打印订单
+
 管理员部分：
 * 登录、注销
 * 总览
@@ -48,11 +55,6 @@ admin
 * Mysql + c3p0 + commons数据库操作工具
 * apache的poi文件导出api
 
-### 项目详细说明介绍
-https://blog.csdn.net/weixin_43786818/article/details/107980802
-
-### 2.0版本地址
-https://github.com/Suarge/gms-2.0
 
 ### 安装
 #### 1、下载项目到本地
@@ -70,5 +72,6 @@ git clone https://github.com/Suarge/gms-1.0.git
   1. 通过修改GMX_index.jsp里面的日期为2020-8-13
   2. 项目中有一个cpp文件，该文件打开后可以根据你自己设置的日期，生成sql语句，前台只显示3天，默认生成4天的sql，比如今天是2020-11-13，那你的prdate = 12 提前一天
 * 这样操作后你就可以成功运行了
+
 ### 最后
 有问题的话可以邮件联系：1274334685@qq.com
